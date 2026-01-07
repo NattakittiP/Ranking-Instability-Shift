@@ -1,0 +1,10 @@
+{
+  "ranking_stability": {
+    "global_flip_rate": 0.5,
+    "margin": 0.0,
+    "preference_consistency": 0.5,
+    "ref_env": "synthetic",
+    "score": "auroc",
+    "spearman_mean": 0.0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "target": "label_mortality",
+  "cv_splits": 5,
+  "perm_repeats": 10,
+  "early_keep_fracs": [
+    "0.25",
+    "0.5",
+    "0.75"
+  ],
+  "recommendations": [
+    "If full AUROC remains ~0.99+ using ONLY demographics/admission meta, there is likely post-outcome leakage.",
+    "If near-perfect AUROC requires labs and collapses under early-labs simulation, argue measurement timing as a mechanism.",
+    "Permutation AUROC must be near 0.5; otherwise pipeline or split has leakage."
+  ]
+}

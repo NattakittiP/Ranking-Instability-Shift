@@ -1,0 +1,8 @@
+regime,flip_rate
+Uncontrolled,0.16666666666666666
+Leakage-hardened,0.2
+Patient-level split,0.3333333333333333
+Temporal split,0.8333333333333334
+Sample-size matched,0.10800000000000001
+Composition matched,0.10000000000000002
+IPW weighted,0.12266666666666667

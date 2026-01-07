@@ -1,0 +1,20 @@
+=== STABLE-MERGE EXTENSION SUMMARY ===
+Task: tg_high_response
+Environments: ['synthetic', 'nhanes']
+Ranking stability (global): flip_rate=0.500, spearman_mean=0.000
+
+Top models by mean AUROC:
+model    auroc  worst_auroc      ece  flip_rate    auprc  logloss
+  HGB 0.955647     0.950872 0.030211       0.00 0.949602 0.228122
+   LR 0.950066     0.921443 0.101273       0.25 0.897974 0.279446
+   RF 0.932000     0.891665 0.035357       0.50 0.872620 0.226179
+   ET 0.923977     0.870968 0.092585       1.00 0.852087 0.281233
+  MLP 0.725629     0.577870 0.043586       0.00 0.839037 0.385044
+
+Selection outcomes:
+                                               policy chosen_model  chosen_score  constraints_satisfied      ece  flip_rate  tau  kappa
+                               select_by_mean_primary          HGB      0.955647                   True      NaN        NaN  NaN    NaN
+                          select_by_worstcase_primary          HGB      0.950872                   True      NaN        NaN  NaN    NaN
+                  select_by_calibration_only(min ECE)          HGB      0.955647                   True 0.030211        NaN  NaN    NaN
+              select_by_rank_stability_only(min flip)          HGB      0.955647                   True      NaN        0.0  NaN    NaN
+constrained(max auroc s.t. ece<=tau,flip_rate<=kappa)          HGB      0.955647                   True 0.030211        0.0 0.05   0.25

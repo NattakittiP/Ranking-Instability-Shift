@@ -1,0 +1,216 @@
+{
+  "config": {
+    "seed": 42,
+    "n_splits": 5,
+    "save_dir": "stable_merge_out",
+    "do_ensemble_merge": true
+  },
+  "envs": [
+    "MIMIC_DEMO",
+    "MIMIC_FULL"
+  ],
+  "global_ranking_stability": -0.19999999999999998,
+  "best_model": "RF_500",
+  "best_score": 0.5485589289351493,
+  "models": {
+    "LogReg_L2": {
+      "stable_merge_score": 0.5223468990819556,
+      "stability": {
+        "perf_std": 0.18720949679451654,
+        "cal_std": 0.07108781924673835,
+        "perf_stability": 0.5702796123881309,
+        "cal_stability": 0.7008656281756513,
+        "expl_stability": 0.15508001599520385
+      },
+      "env_metrics": {
+        "MIMIC_DEMO": {
+          "auroc": 0.6224754669199114,
+          "auprc": 0.5848346850798734,
+          "logloss": 0.7517135698873452,
+          "brier": 0.2616905012661799,
+          "ece": 0.1472950473147353,
+          "cal_slope": 0.30776609924966286,
+          "cal_intercept": -0.1345006844806066
+        },
+        "MIMIC_FULL": {
+          "auroc": 0.9968944605089445,
+          "auprc": 0.9842523735841242,
+          "logloss": 0.010429805683239408,
+          "brier": 0.0015650763675861053,
+          "ece": 0.005119408821258626,
+          "cal_slope": 0.9968962394019937,
+          "cal_intercept": -2.4094941964494567
+        }
+      },
+      "env_rank_score": {
+        "MIMIC_DEMO": 0.41935240513650623,
+        "MIMIC_FULL": 0.7950296037955934
+      }
+    },
+    "RF_500": {
+      "stable_merge_score": 0.5485589289351493,
+      "stability": {
+        "perf_std": 0.12711437560664668,
+        "cal_std": 0.031239827495674593,
+        "perf_stability": 0.6829435131759025,
+        "cal_stability": 0.8553888334340376,
+        "expl_stability": 8.456606078207779e-05
+      },
+      "env_metrics": {
+        "MIMIC_DEMO": {
+          "auroc": 0.7442228553339664,
+          "auprc": 0.6918675050761675,
+          "logloss": 0.6097543359655151,
+          "brier": 0.20937361637931082,
+          "ece": 0.07570334362391948,
+          "cal_slope": 1.3792081484341472,
+          "cal_intercept": 0.04898726055627108
+        },
+        "MIMIC_FULL": {
+          "auroc": 0.9984516065472597,
+          "auprc": 0.9830395081456864,
+          "logloss": 0.017187692256587592,
+          "brier": 0.0029570522362920818,
+          "ece": 0.013223688632570292,
+          "cal_slope": 2.403539644136396,
+          "cal_intercept": 1.8962975143693162
+        }
+      },
+      "env_rank_score": {
+        "MIMIC_DEMO": 0.5166859662429373,
+        "MIMIC_FULL": 0.7932701028877039
+      }
+    },
+    "ExtraTrees_800": {
+      "stable_merge_score": 0.534838887123742,
+      "stability": {
+        "perf_std": 0.17177539635283529,
+        "cal_std": 0.02802913549638636,
+        "perf_stability": 0.5973057282451895,
+        "cal_stability": 0.8692315987044575,
+        "expl_stability": 0.0
+      },
+      "env_metrics": {
+        "MIMIC_DEMO": {
+          "auroc": 0.6536245647356759,
+          "auprc": 0.5885591274900267,
+          "logloss": 0.6608406994183139,
+          "brier": 0.23317012780846183,
+          "ece": 0.06625858564468463,
+          "cal_slope": 0.793331467160883,
+          "cal_intercept": -0.052521007708919244
+        },
+        "MIMIC_FULL": {
+          "auroc": 0.9971753574413464,
+          "auprc": 0.9811238750244592,
+          "logloss": 0.013610768580368858,
+          "brier": 0.0014112858232904755,
+          "ece": 0.010200314651911919,
+          "cal_slope": 1.943704852034957,
+          "cal_intercept": 0.4929602271874488
+        }
+      },
+      "env_rank_score": {
+        "MIMIC_DEMO": 0.4586548893776064,
+        "MIMIC_FULL": 0.7939056463244786
+      }
+    },
+    "MLP_256x128": {
+      "stable_merge_score": 0.5345058837183387,
+      "stability": {
+        "perf_std": 0.19964403921274165,
+        "cal_std": 0.0228738037079394,
+        "perf_stability": 0.5493980153964811,
+        "cal_stability": 0.8919287568984955,
+        "expl_stability": 0.024465006692076536
+      },
+      "env_metrics": {
+        "MIMIC_DEMO": {
+          "auroc": 0.5992402659069326,
+          "auprc": 0.5837120852500984,
+          "logloss": 0.6709097513298977,
+          "brier": 0.23963569873962187,
+          "ece": 0.047246781782030886,
+          "cal_slope": 0.8039776220786549,
+          "cal_intercept": 0.011064035042167138
+        },
+        "MIMIC_FULL": {
+          "auroc": 0.9985283443324159,
+          "auprc": 0.9795910212561607,
+          "logloss": 0.007857206525241297,
+          "brier": 0.0016398376453395569,
+          "ece": 0.0014991743661520885,
+          "cal_slope": 1.1353211419855798,
+          "cal_intercept": 0.6595431046782254
+        }
+      },
+      "env_rank_score": {
+        "MIMIC_DEMO": 0.42870471367673224,
+        "MIMIC_FULL": 0.7969200833405514
+      }
+    },
+    "XGB_600": {
+      "stable_merge_score": 0.5250946602444218,
+      "stability": {
+        "perf_std": 0.12441847918285753,
+        "cal_std": 0.06782526420453704,
+        "perf_stability": 0.6884893443503102,
+        "cal_stability": 0.7123924532618797,
+        "expl_stability": 9.993037546417919e-06
+      },
+      "env_metrics": {
+        "MIMIC_DEMO": {
+          "auroc": 0.7492877492877493,
+          "auprc": 0.7110431623240803,
+          "logloss": 0.6717502826019016,
+          "brier": 0.2117825291622811,
+          "ece": 0.13596075105791286,
+          "cal_slope": 0.46257539932570235,
+          "cal_intercept": -0.024533279335570864
+        },
+        "MIMIC_FULL": {
+          "auroc": 0.9981247076534644,
+          "auprc": 0.9858132641049376,
+          "logloss": 0.00491854040983707,
+          "brier": 0.0007815915755165982,
+          "ece": 0.00031022264883880536,
+          "cal_slope": 0.9206568428974908,
+          "cal_intercept": -0.09623116098909798
+        }
+      },
+      "env_rank_score": {
+        "MIMIC_DEMO": 0.5050373657150807,
+        "MIMIC_FULL": 0.7976327917376748
+      }
+    }
+  },
+  "ranks_by_env": {
+    "MIMIC_DEMO": [
+      "RF_500",
+      "XGB_600",
+      "ExtraTrees_800",
+      "MLP_256x128",
+      "LogReg_L2"
+    ],
+    "MIMIC_FULL": [
+      "XGB_600",
+      "MLP_256x128",
+      "LogReg_L2",
+      "ExtraTrees_800",
+      "RF_500"
+    ]
+  },
+  "stable_ensemble": {
+    "ok": true,
+    "message": "Optimization terminated successfully",
+    "weights": {
+      "ExtraTrees_800": 8.07730618500893e-18,
+      "LogReg_L2": 0.056960489890598195,
+      "MLP_256x128": 0.182560736327481,
+      "RF_500": 0.2656011358507468,
+      "XGB_600": 0.494877637930174
+    },
+    "final_objective": 0.4691130653287578,
+    "objective_evals": 54
+  }
+}

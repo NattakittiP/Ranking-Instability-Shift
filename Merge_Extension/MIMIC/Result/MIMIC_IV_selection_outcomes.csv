@@ -1,0 +1,6 @@
+policy,chosen_model,chosen_score,constraints_satisfied,ece,flip_rate,tau,kappa
+select_by_mean_primary,RF,0.8720136195125986,True,,,,
+select_by_worstcase_primary,RF,0.7458689458689457,True,,,,
+select_by_calibration_only(min ECE),ET,0.8187068509159972,True,0.05178642170316056,,,
+select_by_rank_stability_only(min flip),MLP,0.7561529907759013,True,,0.0,,
+constrained-fallback(max auroc; infeasible),RF,0.8720136195125986,False,0.063749565225094,0.0,0.05,0.25

@@ -1,0 +1,31 @@
+=== TG HIGH RESPONSE (FIXED) ===
+Label meta: {
+  "synth_col_used": "TG4h",
+  "nhanes_col_used": "TG",
+  "quantile": 0.75,
+  "thr_from_synth_quantile": 528.2654064623237,
+  "thr_from_nhanes_quantile": 135.0,
+  "shared_threshold_used": 135.0,
+  "switched_to_nhanes_threshold": true,
+  "synth_label_counts": {
+    "1": 1401,
+    "0": 99
+  },
+  "nhanes_label_counts": {
+    "0": 2544,
+    "1": 861
+  }
+}
+
+Per-env metrics head:
+      env model    auroc    auprc  logloss    brier      ece
+synthetic    LR 0.978688 0.998409 0.173995 0.056081 0.084817
+synthetic    RF 0.972336 0.997675 0.092506 0.024690 0.019611
+synthetic    ET 0.976986 0.998294 0.132109 0.031077 0.068171
+synthetic   HGB 0.950872 0.995759 0.229504 0.027479 0.028141
+synthetic   MLP 0.577870 0.944314 0.397694 0.065643 0.063594
+   nhanes    LR 0.921443 0.797538 0.384896 0.111388 0.117729
+   nhanes    RF 0.891665 0.747564 0.359852 0.110729 0.051104
+   nhanes    ET 0.870968 0.705880 0.430357 0.134619 0.117000
+   nhanes   HGB 0.960423 0.903445 0.226740 0.066507 0.032281
+   nhanes   MLP 0.873389 0.733759 0.372394 0.115895 0.023579

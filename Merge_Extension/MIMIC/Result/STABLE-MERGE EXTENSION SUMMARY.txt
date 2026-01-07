@@ -1,0 +1,20 @@
+=== STABLE-MERGE EXTENSION SUMMARY ===
+Task: mimic_mortality
+Environments: ['demo', 'full']
+Ranking stability (global): flip_rate=0.400, spearman_mean=0.300
+
+Top models by mean AUROC:
+model    auroc  worst_auroc      ece  flip_rate    auprc  logloss
+   RF 0.872014     0.745869 0.063750        0.0 0.839633 0.311760
+  HGB 0.865721     0.736689 0.098545        1.0 0.854046 0.476297
+   ET 0.818707     0.639569 0.051786        0.5 0.775446 0.340131
+   LR 0.812309     0.626464 0.078670        0.0 0.778414 0.400949
+  MLP 0.756153     0.514846 0.213163        0.0 0.739366 1.291491
+
+Selection outcomes:
+                                     policy chosen_model  chosen_score  constraints_satisfied      ece  flip_rate  tau  kappa
+                     select_by_mean_primary           RF      0.872014                   True      NaN        NaN  NaN    NaN
+                select_by_worstcase_primary           RF      0.745869                   True      NaN        NaN  NaN    NaN
+        select_by_calibration_only(min ECE)           ET      0.818707                   True 0.051786        NaN  NaN    NaN
+    select_by_rank_stability_only(min flip)          MLP      0.756153                   True      NaN        0.0  NaN    NaN
+constrained-fallback(max auroc; infeasible)           RF      0.872014                  False 0.063750        0.0 0.05   0.25

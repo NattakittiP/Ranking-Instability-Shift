@@ -1,0 +1,57 @@
+regime,env,model,auroc
+Uncontrolled,demo,LR,0.9901547116736991
+Uncontrolled,full,LR,0.9968653530731956
+Uncontrolled,demo,RF,0.99915611814346
+Uncontrolled,full,RF,0.9988297996634937
+Uncontrolled,demo,ET,1.0
+Uncontrolled,full,ET,0.9979730640196678
+Uncontrolled,demo,HGB,0.9178621659634318
+Uncontrolled,full,HGB,0.996537945308146
+Leakage-hardened,demo,LR,0.8151898734177215
+Leakage-hardened,full,LR,0.9137229143097445
+Leakage-hardened,demo,RF,0.8255977496483826
+Leakage-hardened,full,RF,0.9471362150644618
+Leakage-hardened,demo,ET,0.8255977496483826
+Leakage-hardened,full,ET,0.9426027828336964
+Leakage-hardened,demo,HGB,0.8174402250351617
+Leakage-hardened,full,HGB,0.9446911904615544
+Patient-level split,demo,LR,0.9538677918424754
+Patient-level split,full,LR,0.9975468334570229
+Patient-level split,demo,RF,0.99971870604782
+Patient-level split,full,RF,0.9984171050762146
+Patient-level split,demo,ET,1.0
+Patient-level split,full,ET,0.9973033894489413
+Patient-level split,demo,HGB,0.9147679324894515
+Patient-level split,full,HGB,0.9947063141152337
+Temporal split,demo,LR,0.856338028169014
+Temporal split,full,LR,0.9961418789793626
+Temporal split,demo,RF,0.9943661971830986
+Temporal split,full,RF,0.9966748614725682
+Temporal split,demo,ET,1.0
+Temporal split,full,ET,0.993013607859331
+Temporal split,demo,HGB,0.7999999999999999
+Temporal split,full,HGB,0.99759437631445
+Sample-size matched (rep=base),demo,LR,0.9901547116736991
+Sample-size matched (rep=base),full,LR,0.6903794037940378
+Sample-size matched (rep=base),demo,RF,0.99915611814346
+Sample-size matched (rep=base),full,RF,0.9986449864498644
+Sample-size matched (rep=base),demo,ET,1.0
+Sample-size matched (rep=base),full,ET,1.0
+Sample-size matched (rep=base),demo,HGB,0.9178621659634318
+Sample-size matched (rep=base),full,HGB,0.7411924119241192
+Composition matched (rep=base),demo,LR,0.9901547116736991
+Composition matched (rep=base),full,LR,0.8849490758204451
+Composition matched (rep=base),demo,RF,0.99915611814346
+Composition matched (rep=base),full,RF,1.0
+Composition matched (rep=base),demo,ET,1.0
+Composition matched (rep=base),full,ET,1.0
+Composition matched (rep=base),demo,HGB,0.9178621659634318
+Composition matched (rep=base),full,HGB,0.8789136175028291
+IPW weighted (rep=base),demo,LR,0.9901547116736991
+IPW weighted (rep=base),full,LR,0.7408906882591094
+IPW weighted (rep=base),demo,RF,0.99915611814346
+IPW weighted (rep=base),full,RF,0.9983805668016195
+IPW weighted (rep=base),demo,ET,1.0
+IPW weighted (rep=base),full,ET,1.0
+IPW weighted (rep=base),demo,HGB,0.9178621659634318
+IPW weighted (rep=base),full,HGB,0.8663967611336032

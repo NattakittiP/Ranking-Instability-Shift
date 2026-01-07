@@ -1,0 +1,6 @@
+python icml_leakage_hardening_suite.py run \
+  --demo demo_analytic_dataset_mortality_all_admissions.csv \
+  --full full_analytic_dataset_mortality_all_admissions.csv \
+  --target label_mortality \
+  --group-col subject_id \
+  --outdir runs/leakage_hardening

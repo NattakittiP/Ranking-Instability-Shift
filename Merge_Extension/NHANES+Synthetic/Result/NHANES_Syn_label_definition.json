@@ -1,0 +1,17 @@
+{
+  "nhanes_col_used": "TG",
+  "nhanes_label_counts": {
+    "0": 2544,
+    "1": 861
+  },
+  "quantile": 0.75,
+  "shared_threshold_used": 135.0,
+  "switched_to_nhanes_threshold": true,
+  "synth_col_used": "TG4h",
+  "synth_label_counts": {
+    "0": 99,
+    "1": 1401
+  },
+  "thr_from_nhanes_quantile": 135.0,
+  "thr_from_synth_quantile": 528.2654064623237
+}
