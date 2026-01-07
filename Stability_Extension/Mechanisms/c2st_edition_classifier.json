@@ -1,0 +1,6 @@
+{
+  "edition_classifier": "HGB",
+  "test_frac": 0.25,
+  "n_total": 14333,
+  "auroc": 0.9907110624236442
+}

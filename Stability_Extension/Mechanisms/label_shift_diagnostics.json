@@ -1,0 +1,9 @@
+{
+  "demo_prevalence": 0.05952380952380952,
+  "full_prevalence": 0.025424330658333924,
+  "bb_shift_score_PSI_like": 0.724645082556419,
+  "notes": [
+    "Large prevalence gap and large probability-distribution divergence suggest label shift and/or concept shift.",
+    "This is a diagnostic; it doesn't 'solve' the shift—use it to argue mechanisms and limits of demo-as-proxy."
+  ]
+}

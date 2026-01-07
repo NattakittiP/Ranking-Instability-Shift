@@ -1,0 +1,18 @@
+{
+  "target": "label_mortality",
+  "model": "HGB",
+  "common_feature_count": 36,
+  "n_grid": [
+    500,
+    1000,
+    2000,
+    4000,
+    8000
+  ],
+  "n_reps": 30,
+  "cv_splits": 5,
+  "interpretation": [
+    "Propensity overlap + balance (SMD) are required to claim composition control is valid.",
+    "Learning curve shows whether divergence is a finite-sample artifact or persists asymptotically."
+  ]
+}

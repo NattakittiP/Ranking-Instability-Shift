@@ -1,0 +1,24 @@
+Patient-level Split Audit
+python icml_stability_killer_extensions.py split_audit \
+  --demo demo_analytic_dataset_mortality_all_admissions.csv \
+  --full full_analytic_dataset_mortality_all_admissions.csv \
+  --target label_mortality \
+  --group-col subject_id \
+  --time-col anchor_year \
+  --outdir runs/killer_split_audit_v2
+
+Controls+Learning Curves
+python icml_stability_killer_extensions.py controls_plus \
+  --demo demo_analytic_dataset_mortality_all_admissions.csv \
+  --full full_analytic_dataset_mortality_all_admissions.csv \
+  --target label_mortality \
+  --n-grid 500 1000 2000 4000 8000 \
+  --n-reps 30 \
+  --outdir runs/killer_controls_plus_v2
+
+Mechanisms
+python icml_stability_killer_extensions.py mechanisms_plus \
+  --demo demo_analytic_dataset_mortality_all_admissions.csv \
+  --full full_analytic_dataset_mortality_all_admissions.csv \
+  --target label_mortality \
+  --outdir runs/killer_mechanisms_plus_v2

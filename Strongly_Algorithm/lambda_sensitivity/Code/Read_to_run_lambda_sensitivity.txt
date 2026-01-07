@@ -1,0 +1,5 @@
+python lambda_sweep_icml.py --mimic_only \
+  --demo /content/demo_analytic_dataset_mortality_all_admissions.csv \
+  --full /content/full_analytic_dataset_mortality_all_admissions.csv \
+  --outdir /content/out_lambda_icml \
+  --grid 0,0.05,0.1,0.15,0.2,0.25

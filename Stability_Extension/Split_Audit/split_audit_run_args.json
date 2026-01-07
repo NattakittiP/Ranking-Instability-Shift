@@ -1,0 +1,17 @@
+{
+  "cmd": "split_audit",
+  "demo": "demo_analytic_dataset_mortality_all_admissions.csv",
+  "full": "full_analytic_dataset_mortality_all_admissions.csv",
+  "target": "label_mortality",
+  "group_col": "subject_id",
+  "time_col": "admittime",
+  "train_frac": 0.7,
+  "test_size": 0.2,
+  "n_reps": 20,
+  "cv_splits": 5,
+  "model": "HGB",
+  "drop_cols": [],
+  "id_cols": [],
+  "seed": 42,
+  "outdir": "runs/killer_split_audit"
+}

@@ -1,0 +1,27 @@
+{
+  "metrics_demo": {
+    "auroc": 0.9409282700421941,
+    "auprc": 0.5749920875585012,
+    "logloss": 0.2853712224573792,
+    "brier": 0.04469054075978206
+  },
+  "metrics_full": {
+    "auroc": 0.990439835744501,
+    "auprc": 0.9709402659420795,
+    "logloss": 0.007051681419603187,
+    "brier": 0.0008108533122876104
+  },
+  "metrics_full_with_demo_missingness": {
+    "auroc": 0.9952039902019892,
+    "auprc": 0.9432530684892738,
+    "logloss": 0.017639399680089783,
+    "brier": 0.003389235838519037
+  },
+  "delta_full_minus_demo": 0.04951156570230686,
+  "delta_fullMissing_minus_demo": 0.05427572015979509,
+  "delta_fullMissing_minus_full": 0.004764154457488234,
+  "interpretation": [
+    "If full_with_demo_missingness moves closer to demo, missingness regime explains part of edition divergence.",
+    "If it moves away (or barely changes), mechanism is not missingness marginals alone—likely label/cohort/extraction differences."
+  ]
+}

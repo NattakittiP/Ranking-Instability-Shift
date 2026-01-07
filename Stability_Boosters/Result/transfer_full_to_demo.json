@@ -1,0 +1,16 @@
+{
+  "train_metrics_on_source": {
+    "auroc": 0.9999321165746695,
+    "auprc": 0.9978597228496741,
+    "logloss": 0.0020036916333182656,
+    "brier": 0.0002777447096908884
+  },
+  "eval_metrics_on_target": {
+    "auroc": 1.0,
+    "auprc": 1.0,
+    "logloss": 0.0018271952655365526,
+    "brier": 8.866871142270484e-05
+  },
+  "n_source": 14081,
+  "n_target": 252
+}

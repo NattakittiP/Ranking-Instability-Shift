@@ -1,0 +1,43 @@
+{
+  "target": "label_mortality",
+  "model": "HGB",
+  "common_feature_count": 36,
+  "demo_stratified_cv": {
+    "metrics": {
+      "auroc": 0.9409282700421941,
+      "auprc": 0.5749920875585012,
+      "logloss": 0.2853712224573792,
+      "brier": 0.04469054075978206
+    },
+    "n": 252
+  },
+  "full_stratified_cv": {
+    "metrics": {
+      "auroc": 0.990439835744501,
+      "auprc": 0.9709402659420795,
+      "logloss": 0.007051681419603187,
+      "brier": 0.0008108533122876104
+    },
+    "n": 14081
+  },
+  "demo_groupkfold_cv": {
+    "metrics": {
+      "auroc": 0.929113924050633,
+      "auprc": 0.5246578415806576,
+      "logloss": 0.31187208749379297,
+      "brier": 0.053745541992237585
+    },
+    "n": 252,
+    "group_col": "subject_id"
+  },
+  "full_groupkfold_cv": {
+    "metrics": {
+      "auroc": 0.992143842026822,
+      "auprc": 0.9837263359148501,
+      "logloss": 0.005436536520504262,
+      "brier": 0.0007878404914636749
+    },
+    "n": 14081,
+    "group_col": "subject_id"
+  }
+}

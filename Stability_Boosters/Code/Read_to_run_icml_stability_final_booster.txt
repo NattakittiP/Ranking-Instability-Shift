@@ -1,0 +1,8 @@
+python icml_stability_final_boosters.py run \
+  --demo demo_analytic_dataset_mortality_all_admissions.csv \
+  --full full_analytic_dataset_mortality_all_admissions.csv \
+  --target label_mortality \
+  --group-col subject_id \
+  --time-col anchor_year \
+  --n-grid 50 100 150 200 252 \
+  --outdir runs/final_boosters

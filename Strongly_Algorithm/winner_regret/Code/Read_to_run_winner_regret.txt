@@ -1,0 +1,3 @@
+python winner_regret_from_reports.py \
+  --report stable_merge_report_1767349517.json \
+  --out winner_regret.csv

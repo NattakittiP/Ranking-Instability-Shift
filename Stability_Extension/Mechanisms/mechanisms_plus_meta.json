@@ -1,0 +1,11 @@
+{
+  "target": "label_mortality",
+  "model": "HGB",
+  "common_feature_count": 36,
+  "cv_splits": 5,
+  "key_claims_supported": [
+    "C2ST AUROC quantifies edition separability (domain gap).",
+    "Label prevalence + BBSD score support label/concept shift as a mechanism.",
+    "Missingness-transfer isolates missingness regime contribution."
+  ]
+}

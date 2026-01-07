@@ -1,0 +1,30 @@
+{
+  "cmd": "run",
+  "demo": "demo_analytic_dataset_mortality_all_admissions.csv",
+  "full": "full_analytic_dataset_mortality_all_admissions.csv",
+  "target": "label_mortality",
+  "model": "HGB",
+  "seed": 42,
+  "group_col": "subject_id",
+  "time_col": "anchor_year",
+  "train_frac": 0.7,
+  "cv_splits": 5,
+  "n_reps": 30,
+  "n_grid": [
+    "50",
+    "100",
+    "150",
+    "200",
+    "252"
+  ],
+  "bootstrap_B": 500,
+  "subgroup_cols": [
+    "gender",
+    "race",
+    "insurance",
+    "admission_type"
+  ],
+  "subgroup_min_n": 80,
+  "drop_cols": [],
+  "outdir": "runs/final_boosters"
+}

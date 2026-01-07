@@ -1,0 +1,10 @@
+{
+  "tag": "MIMIC_wrank_0.000",
+  "weights": {
+    "w_perf": 0.7,
+    "w_cal": 0.15,
+    "w_expl": 0.15,
+    "w_rank": 0.0
+  },
+  "timestamp": 1767516493
+}

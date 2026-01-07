@@ -1,0 +1,23 @@
+{
+  "cmd": "controls_plus",
+  "demo": "demo_analytic_dataset_mortality_all_admissions.csv",
+  "full": "full_analytic_dataset_mortality_all_admissions.csv",
+  "target": "label_mortality",
+  "group_col": null,
+  "time_col": null,
+  "covariates": null,
+  "max_covariates": 15,
+  "n_grid": [
+    500,
+    1000,
+    2000,
+    4000,
+    8000
+  ],
+  "n_reps": 30,
+  "cv_splits": 5,
+  "model": "HGB",
+  "drop_cols": [],
+  "seed": 42,
+  "outdir": "runs/killer_controls_plus_v2"
+}
