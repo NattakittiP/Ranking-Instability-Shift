@@ -1,0 +1,6 @@
+,mean_flip_fraction
+HGB,0.0
+LR,0.25
+MLP,0.25
+RF,0.25
+ET,0.5

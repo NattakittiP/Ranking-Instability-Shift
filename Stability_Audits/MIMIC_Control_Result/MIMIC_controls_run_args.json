@@ -1,0 +1,21 @@
+{
+  "cmd": "mimic_controls",
+  "demo": "demo_analytic_dataset_mortality_all_admissions.csv",
+  "full": "full_analytic_dataset_mortality_all_admissions.csv",
+  "target": "label_mortality",
+  "id_col": null,
+  "drop_cols": [],
+  "model": "HGB",
+  "controls": [
+    "sample_size",
+    "composition",
+    "ipw"
+  ],
+  "covariates": null,
+  "max_covariates": 12,
+  "n_reps": 50,
+  "cv_splits": 5,
+  "cv_repeats": 3,
+  "seed": 42,
+  "outdir": "runs/audit_2_controls"
+}

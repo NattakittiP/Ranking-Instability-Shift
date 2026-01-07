@@ -1,0 +1,42 @@
+MIMIC edition divergence (demo vs full)
+!python icml_stability_suite.py --task mimic_mortality \
+  --mimic-demo demo_analytic_dataset_mortality_all_admissions.csv \
+  --mimic-full full_analytic_dataset_mortality_all_admissions.csv \
+  --target-col label_mortality \
+  --rank-score auroc --rank-margin 0.0 \
+  --cv-splits 5 --cv-repeats 10 \
+  --calibrate \
+  --outdir runs/icml_suite_mimic
+
+
+NHANES quantile shared
+!python icml_stability_suite.py --task tg_high_response \
+  --synthetic Synthetic_Dataset_1500_Patients_precise.csv \
+  --nhanes nhanes_rsce_dataset_clean.csv \
+  --label-mode nhanes_quantile_shared --label-quantile 0.75 \
+  --rank-score auroc --rank-margin 0.0 \
+  --cv-splits 5 --cv-repeats 10 \
+  --calibrate \
+  --outdir runs/icml_suite_tg_nhanesQ
+
+Threshold sensitivity scan
+!python icml_stability_suite.py --task tg_high_response \
+  --synthetic Synthetic_Dataset_1500_Patients_precise.csv \
+  --nhanes nhanes_rsce_dataset_clean.csv \
+  --label-mode shared_absolute \
+  --shared-threshold 150 \
+  --threshold-scan 80 300 10 \
+  --rank-score auroc --rank-margin 0.0 \
+  --cv-splits 5 --cv-repeats 6 \
+  --calibrate \
+  --outdir runs/icml_suite_tg_thrscan
+
+CDF-matching
+!python icml_stability_suite.py --task tg_high_response \
+  --synthetic Synthetic_Dataset_1500_Patients_precise.csv \
+  --nhanes nhanes_rsce_dataset_clean.csv \
+  --label-mode cdf_match --label-quantile 0.75 \
+  --rank-score auroc --rank-margin 0.0 \
+  --cv-splits 5 --cv-repeats 10 \
+  --calibrate \
+  --outdir runs/icml_suite_tg_cdfmatch

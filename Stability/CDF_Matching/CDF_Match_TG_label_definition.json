@@ -1,0 +1,16 @@
+{
+  "synth_col_used": "TG4h",
+  "nhanes_col_used": "TG",
+  "quantile": 0.75,
+  "mode": "cdf_match",
+  "thr_from_nhanes_quantile": 135.0,
+  "shared_threshold_used": 135.0,
+  "synth_label_counts": {
+    "0": 1121,
+    "1": 379
+  },
+  "nhanes_label_counts": {
+    "0": 2544,
+    "1": 861
+  }
+}

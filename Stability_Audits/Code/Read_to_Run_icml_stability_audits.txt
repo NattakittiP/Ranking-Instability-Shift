@@ -1,0 +1,30 @@
+Leakage & Trivial-Predictor Audit
+!python icml_stability_next_audits.py leakage_audit \
+  --demo demo_analytic_dataset_mortality_all_admissions.csv \
+  --full full_analytic_dataset_mortality_all_admissions.csv \
+  --target label_mortality \
+  --model HGB \
+  --cv-splits 5 --cv-repeats 3 \
+  --n-perm-repeats 10 \
+  --outdir runs/audit_1_leakage
+
+Controlled Sample-Size & Cohort-Composition Controls (MIMIC)
+!python icml_stability_next_audits.py mimic_controls \
+  --demo demo_analytic_dataset_mortality_all_admissions.csv \
+  --full full_analytic_dataset_mortality_all_admissions.csv \
+  --target label_mortality \
+  --controls sample_size composition ipw \
+  --model HGB \
+  --n-reps 50 \
+  --cv-splits 5 --cv-repeats 3 \
+  --outdir runs/audit_2_controls
+
+Mechanism / Why it flips (MIMIC shift + ablation)
+!python icml_stability_next_audits.py flip_mechanisms \
+  --demo demo_analytic_dataset_mortality_all_admissions.csv \
+  --full full_analytic_dataset_mortality_all_admissions.csv \
+  --target label_mortality \
+  --model HGB \
+  --cv-splits 5 --cv-repeats 3 \
+  --max-shift-features 60 \
+  --outdir runs/audit_3_mechanism

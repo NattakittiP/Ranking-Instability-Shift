@@ -1,0 +1,15 @@
+{
+  "cmd": "leakage_audit",
+  "demo": "demo_analytic_dataset_mortality_all_admissions.csv",
+  "full": "full_analytic_dataset_mortality_all_admissions.csv",
+  "target": "label_mortality",
+  "id_col": null,
+  "drop_cols": [],
+  "model": "HGB",
+  "cv_splits": 5,
+  "cv_repeats": 3,
+  "n_perm_repeats": 10,
+  "max_rows": null,
+  "seed": 42,
+  "outdir": "runs/audit_1_leakage"
+}

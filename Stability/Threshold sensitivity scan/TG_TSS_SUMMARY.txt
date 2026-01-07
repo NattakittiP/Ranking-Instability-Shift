@@ -1,0 +1,23 @@
+=== ICML STABILITY SUITE SUMMARY ===
+Task: tg_high_response
+Environments: ['synthetic', 'nhanes']
+
+Label meta: {"synth_col_used": "TG4h", "nhanes_col_used": "TG", "quantile": 0.75, "mode": "shared_absolute", "shared_threshold_used": 150.0, "synth_label_counts": {"1": 1382, "0": 118}, "nhanes_label_counts": {"0": 2746, "1": 659}}
+
+Ranking stability (global): flip_rate=0.150, spearman_mean=0.872
+
+Top models by mean auroc:
+model  mean_auroc
+   RF    1.000000
+  HGB    0.999998
+   LR    0.999265
+   ET    0.998745
+  MLP    0.939644
+
+Selection outcomes:
+                                          policy chosen_model  chosen_score  constraints_satisfied      ece  flip_rate  tau  kappa
+                          select_by_mean_primary           RF      1.000000                   True 0.003964        NaN  NaN    NaN
+                     select_by_worstcase_primary           RF      1.000000                   True 0.003964        NaN  NaN    NaN
+             select_by_calibration_only(min ECE)           RF      1.000000                   True 0.003964        NaN  NaN    NaN
+         select_by_rank_stability_only(min flip)          HGB      0.999998                   True 0.004830       0.00  NaN    NaN
+constrained(max score s.t. ece<=tau,flip<=kappa)           RF      1.000000                   True 0.003964       0.25 0.05   0.25

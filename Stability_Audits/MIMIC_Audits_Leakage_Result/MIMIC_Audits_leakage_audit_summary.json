@@ -1,0 +1,226 @@
+{
+  "target": "label_mortality",
+  "common_feature_count": 31,
+  "demo_summary": {
+    "n_features_screened": 25,
+    "max_single_feature_auroc": 0.5962329851218741,
+    "n_features_auroc_ge_0.95": 0,
+    "top_suspects_by_single_feature_auroc": [
+      {
+        "feature": "lab_50960",
+        "single_feature_auroc": 0.5962329851218741,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_51301",
+        "single_feature_auroc": 0.592909148464704,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_50893",
+        "single_feature_auroc": 0.5665716999050333,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_51249",
+        "single_feature_auroc": 0.5651471984805319,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_51265",
+        "single_feature_auroc": 0.5448876226654005,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_50882",
+        "single_feature_auroc": 0.5400126622348845,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_50868",
+        "single_feature_auroc": 0.539031339031339,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_51221",
+        "single_feature_auroc": 0.5383349161126938,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_50983",
+        "single_feature_auroc": 0.5350110794555238,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_50931",
+        "single_feature_auroc": 0.5256093700538145,
+        "leaky_name_score": 0.0
+      }
+    ],
+    "top_suspects_by_permutation_auc_drop": [
+      {
+        "feature": "lab_50820",
+        "auc_drop_mean": 0.129054392556808,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_51301",
+        "auc_drop_mean": 0.04627124709250312,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_51249",
+        "auc_drop_mean": 0.03666443013061369,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_50893",
+        "auc_drop_mean": 0.02374530327428877,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_51275",
+        "auc_drop_mean": 0.021937287529074954,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_50882",
+        "auc_drop_mean": 0.007324208266237237,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_50983",
+        "auc_drop_mean": 0.00633834317409195,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_50960",
+        "auc_drop_mean": 0.00491188047951332,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_51248",
+        "auc_drop_mean": 0.004164877437824282,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_50970",
+        "auc_drop_mean": 0.0010726426910001665,
+        "leaky_name_score": 0.0
+      }
+    ]
+  },
+  "full_summary": {
+    "n_features_screened": 25,
+    "max_single_feature_auroc": 0.7809392704903116,
+    "n_features_auroc_ge_0.95": 0,
+    "top_suspects_by_single_feature_auroc": [
+      {
+        "feature": "lab_51006",
+        "single_feature_auroc": 0.7809392704903116,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_51301",
+        "single_feature_auroc": 0.7302460250030837,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_51277",
+        "single_feature_auroc": 0.7273184886768004,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_50931",
+        "single_feature_auroc": 0.7147646348319523,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_50882",
+        "single_feature_auroc": 0.7072164457419079,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "anchor_age",
+        "single_feature_auroc": 0.7007600908151995,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_51274",
+        "single_feature_auroc": 0.6997440784687616,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_50912",
+        "single_feature_auroc": 0.6887578534100683,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_51222",
+        "single_feature_auroc": 0.687208035117816,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_51279",
+        "single_feature_auroc": 0.6800465881810783,
+        "leaky_name_score": 0.0
+      }
+    ],
+    "top_suspects_by_permutation_auc_drop": [
+      {
+        "feature": "lab_50820",
+        "auc_drop_mean": 0.05090817140069653,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_51301",
+        "auc_drop_mean": 0.015562897409009093,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "anchor_age",
+        "auc_drop_mean": 0.012821145784543997,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_50882",
+        "auc_drop_mean": 0.006246264955565145,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "admission_type",
+        "auc_drop_mean": 0.0058616071616425435,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_51006",
+        "auc_drop_mean": 0.00575999612577913,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_50931",
+        "auc_drop_mean": 0.004751969150233817,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_51277",
+        "auc_drop_mean": 0.0036891427078241104,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "lab_51265",
+        "auc_drop_mean": 0.0022648286166878297,
+        "leaky_name_score": 0.0
+      },
+      {
+        "feature": "admission_location",
+        "auc_drop_mean": 0.0020965518578616475,
+        "leaky_name_score": 0.0
+      }
+    ]
+  },
+  "notes": [
+    "High single-feature AUROC and large permutation AUC-drop are red flags for leakage/proxies.",
+    "If suspects contain discharge/death/LOS or post-event interventions, consider excluding them or reframing the prediction time horizon."
+  ]
+}

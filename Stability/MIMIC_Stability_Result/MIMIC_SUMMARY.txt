@@ -1,0 +1,21 @@
+=== ICML STABILITY SUITE SUMMARY ===
+Task: mimic_mortality
+Environments: ['demo', 'full']
+
+Ranking stability (global): flip_rate=0.600, spearman_mean=-0.300
+
+Top models by mean auroc:
+model  mean_auroc
+  HGB    0.864556
+   RF    0.863250
+   ET    0.796581
+   LR    0.775207
+  MLP    0.774162
+
+Selection outcomes:
+                                          policy chosen_model  chosen_score  constraints_satisfied      ece  flip_rate  tau  kappa
+                          select_by_mean_primary          HGB      0.864556                   True 0.080415        NaN  NaN    NaN
+                     select_by_worstcase_primary          HGB      0.731154                   True 0.080415        NaN  NaN    NaN
+             select_by_calibration_only(min ECE)          MLP      0.774162                   True 0.045225        NaN  NaN    NaN
+         select_by_rank_stability_only(min flip)          HGB      0.864556                   True 0.080415       0.25  NaN    NaN
+constrained(max score s.t. ece<=tau,flip<=kappa)           NA           NaN                  False      NaN        NaN 0.05   0.25

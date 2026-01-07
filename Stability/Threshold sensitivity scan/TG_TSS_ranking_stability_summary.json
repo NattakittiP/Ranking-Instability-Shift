@@ -1,0 +1,62 @@
+{
+  "task": "tg_high_response",
+  "envs": [
+    "synthetic",
+    "nhanes"
+  ],
+  "ranking_stability": {
+    "ref_env": "synthetic",
+    "score": "auroc",
+    "margin": 0.0,
+    "global_flip_rate": 0.15,
+    "preference_consistency": 0.85,
+    "spearman_mean": 0.8720815992723809
+  },
+  "label_meta": {
+    "synth_col_used": "TG4h",
+    "nhanes_col_used": "TG",
+    "quantile": 0.75,
+    "mode": "shared_absolute",
+    "shared_threshold_used": 150.0,
+    "synth_label_counts": {
+      "1": 1382,
+      "0": 118
+    },
+    "nhanes_label_counts": {
+      "0": 2746,
+      "1": 659
+    }
+  },
+  "args": {
+    "task": "tg_high_response",
+    "mimic_demo": null,
+    "mimic_full": null,
+    "synthetic": "Synthetic_Dataset_1500_Patients_precise.csv",
+    "nhanes": "nhanes_rsce_dataset_clean.csv",
+    "target_col": null,
+    "id_col": null,
+    "drop_cols": [],
+    "synth_tg_col": null,
+    "nhanes_tg_col": null,
+    "label_mode": "shared_absolute",
+    "label_quantile": 0.75,
+    "shared_threshold": 150.0,
+    "threshold_scan": [
+      80.0,
+      300.0,
+      10.0
+    ],
+    "seed": 42,
+    "cv_splits": 5,
+    "cv_repeats": 6,
+    "calibrate": true,
+    "calibrate_method": "sigmoid",
+    "calibrate_cv": 3,
+    "rank_score": "auroc",
+    "rank_margin": 0.0,
+    "ref_env": null,
+    "tau": 0.05,
+    "kappa": 0.25,
+    "outdir": "runs/icml_suite_tg_thrscan"
+  }
+}

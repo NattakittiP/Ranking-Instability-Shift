@@ -1,0 +1,6 @@
+policy,chosen_model,chosen_score,constraints_satisfied,ece,flip_rate,tau,kappa
+select_by_mean_primary,RF,0.9999988251879699,True,0.0038472007041090678,,,
+select_by_worstcase_primary,RF,0.9999976503759399,True,0.0038472007041090678,,,
+select_by_calibration_only(min ECE),RF,0.9999988251879699,True,0.0038472007041090678,,,
+select_by_rank_stability_only(min flip),HGB,0.999998237781955,True,0.004962538316046339,0.0,,
+"constrained(max score s.t. ece<=tau,flip<=kappa)",RF,0.9999988251879699,True,0.0038472007041090678,0.25,0.05,0.25
