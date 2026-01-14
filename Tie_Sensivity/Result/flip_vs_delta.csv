@@ -1,0 +1,9 @@
+delta,tie_mode,total_pairs,effective_pairs,flip_pairs,fliprate,ties_demo,ties_full
+0.0,deterministic,10,10,5,0.5,0,0
+0.0,tie_as_tie,10,9,5,0.5555555555555556,1,0
+0.001,deterministic,10,10,5,0.5,0,0
+0.001,tie_as_tie,10,4,3,0.75,3,6
+0.002,deterministic,10,10,4,0.4,0,0
+0.002,tie_as_tie,10,0,0,0.0,3,10
+0.005,deterministic,10,10,4,0.4,0,0
+0.005,tie_as_tie,10,0,0,0.0,3,10
