@@ -1,0 +1,3 @@
+env_dropped,K_envs_kept,FlipRate_global,Feasible_set_size,Strict_selected,Infeasible,Fallback_model,Fallback_worst_regret
+nhanes,1,0.0,3,RF,False,RF,0.0
+synthetic,1,0.0,3,HGB,False,HGB,0.0

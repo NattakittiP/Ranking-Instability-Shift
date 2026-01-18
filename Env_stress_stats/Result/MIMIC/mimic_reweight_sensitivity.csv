@@ -1,0 +1,4 @@
+scenario,weights,FlipRate_global,Feasible_set_size,Strict_selected,Infeasible,Fallback_model,Fallback_worst_regret
+uniform,"{""demo"": 0.5, ""full"": 0.5}",0.6,0,,True,HGB,0.00010427914863719856
+heavy_demo_0.7,"{""demo"": 0.7, ""full"": 0.30000000000000004}",0.6,0,,True,HGB,0.00010427914863719856
+heavy_full_0.7,"{""demo"": 0.30000000000000004, ""full"": 0.7}",0.6,0,,True,HGB,0.00010427914863719856

@@ -1,0 +1,4 @@
+scenario,weights,FlipRate_global,Feasible_set_size,Strict_selected,Infeasible,Fallback_model,Fallback_worst_regret
+uniform,"{""nhanes"": 0.5, ""synthetic"": 0.5}",0.3,0,,True,RF,0.0
+heavy_nhanes_0.7,"{""nhanes"": 0.7, ""synthetic"": 0.30000000000000004}",0.3,0,,True,RF,0.0
+heavy_synthetic_0.7,"{""nhanes"": 0.30000000000000004, ""synthetic"": 0.7}",0.3,0,,True,RF,0.0

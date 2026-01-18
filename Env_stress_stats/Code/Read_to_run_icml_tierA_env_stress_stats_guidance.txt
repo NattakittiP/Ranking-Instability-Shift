@@ -1,0 +1,15 @@
+!python icml_tierA_env_stress_stats_guidance.py \
+  --csv /content/MIMIC_per_env_metrics.csv \
+  --outdir /content/tierA_out_mimic \
+  --tau_grid 0.01,0.015,0.02,0.025,0.03 \
+  --kappa_grid 0.05,0.1,0.15,0.2,0.25,0.3 \
+  --tau_default 0.02 \
+  --kappa_default 0.2
+
+!python icml_tierA_env_stress_stats_guidance.py \
+  --csv /content/TG_per_env_metrics.csv \
+  --outdir /content/tierA_out_tg_plus \
+  --tau_grid 0.01,0.015,0.02,0.025,0.03 \
+  --kappa_grid 0.05,0.1,0.15,0.2,0.25,0.3 \
+  --tau_default 0.02 \
+  --kappa_default 0.2
